@@ -1,0 +1,51 @@
+{
+  "name": "@ysnksy/convertmad",
+  "version": "1.0.0",
+  "description": "A utility to convert Moroccan Dirham (MAD) to other subunits (Centime, Rial) and vice versa.",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./global": {
+      "import": "./dist/global.js",
+      "types": "./dist/global.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts src/global.ts --format esm,cjs --dts",
+    "prepare": "npm run build",
+    "lint": "eslint src --fix",
+    "test": "jest"
+  },
+  "keywords": [
+    "MAD",
+    "centime",
+    "rial",
+    "dirham",
+    "money",
+    "currency",
+    "convert",
+    "morocco",
+    "maroc",
+    "maghreeb"
+  ],
+  "author": "Yassine Kassy",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "eslint": "^9.23.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.5.3",
+    "ts-jest": "^29.3.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2"
+  }
+}

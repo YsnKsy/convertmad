@@ -1,2 +1,2 @@
-import { ConvertMAD } from './convertMAD'
-export { ConvertMAD }
+import { ConvertMAD } from "./convertMAD";
+export { ConvertMAD };
